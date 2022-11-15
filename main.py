@@ -25,7 +25,9 @@ def draw(WIN, player):
 
 def draw_lost_screen(WIN):
     WIN.fill((0, 0, 0))
-    # font1 = pygame.font.SysFont()
+    font1 = pygame.font.SysFont(r".\CascadiaCode.ttf", 100)
+    text1 = font1.render("You lost!", True, (255, 255, 255))
+    WIN.blit(text1, text1.get_rect())
 
 
 def main():
