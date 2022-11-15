@@ -61,7 +61,6 @@ def main():
         if frame_count % (pipe_img.get_width() * 3) == 0:
             pipes.append(Pipe.Pipe(WIDTH, -rotated_pipe_img.get_height() * (1 - peace), HEIGHT/4,
                                    rotated_pipe_img,  pipe_img))
-            print(len(pipes))
         pygame.display.update()
         frame_count += 1
         clock.tick(30)
